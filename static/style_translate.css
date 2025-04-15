@@ -1,0 +1,129 @@
+/* 基本重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面整体样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 容器样式 */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* 标题样式 */
+h1 {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+/* 表单样式 */
+form {
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    border-color: #007BFF;
+}
+
+/* 提交按钮样式 */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 链接样式 */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* 段落样式 */
+p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* 加载状态提示 */
+#progress-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#progress-container.active {
+    display: block;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#progress-bar-inner {
+    width: 0;
+    height: 100%;
+    background-color: #007BFF;
+    transition: width 0.5s ease;
+}
